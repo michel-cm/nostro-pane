@@ -31,4 +31,13 @@ export default createGlobalStyle`
     h1,h2,h4,h5,h6 {
         font-family: 'Open Sans', sans-serif;
     }
+
+    .column {
+        padding: 0 16px;
+    }
+    .row {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+    }
 `;
