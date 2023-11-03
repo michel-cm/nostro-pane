@@ -20,13 +20,13 @@ export default createGlobalStyle`
     body {
         background-color:  ${(props) => props.theme.colors.background};
         font-size: 14px;
-        color:  ${(props) => props.theme.colors.text};
-        font-family: sans-serif;
+        color:  ${(props) => props.theme.colors.text};   
     }
 
     body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
+        font-weight: 300;
     }
     h1,h2,h4,h5,h6 {
         font-family: 'Open Sans', sans-serif;

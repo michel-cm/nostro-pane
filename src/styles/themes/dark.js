@@ -9,8 +9,10 @@ export default {
     secundaryLight: "#408AAA",
 
     background: "#202024",
-    backgroundAside: "#323238",
     text: "#F7F7F7",
+
+    /*HEADER*/
+    header: "#323238",
 
     "gray-50": "#EAEAEA",
     "gray-100": "#E1E1E6",
