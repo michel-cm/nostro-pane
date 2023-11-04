@@ -1,30 +1,27 @@
 import * as C from "./styles";
 // import ToggleTheme from "../../components/ToggleTheme";
-import { useTheme } from "../../hooks/useTheme";
-import cartBlack from "../../assets/cart-black.png";
-import cartWhite from "../../assets/cart-white.png";
+import { Logo } from "../../components/Logo";
+import { Info } from "../../components/Info";
+import { Cart } from "../../components/Cart";
 
-import { MdEmojiFoodBeverage } from "react-icons/md";
+// import { MdEmojiFoodBeverage } from "react-icons/md";
 
 const Header = () => {
-  const { isDarkTheme } = useTheme();
-
   return (
     <C.Container className="column">
       <div className="row">
-        <MdEmojiFoodBeverage
+        {/* <MdEmojiFoodBeverage
           size={38}
           color={isDarkTheme === "dark" ? "#408AAA" : "#C49C6B"}
-        />
-        <C.Cart>
-          <div>
-            <img
-              src={isDarkTheme === "dark" ? cartWhite : cartBlack}
-              alt="Sacola de compras"
-            />
-            <span>3</span>
-          </div>
-        </C.Cart>
+        /> */}
+        <C.AreaLogo>
+          <Logo />
+          <C.titleLogo>Nostro Pane</C.titleLogo>
+        </C.AreaLogo>
+        <C.AreaIcons>
+          <Info />
+          <Cart />
+        </C.AreaIcons>
       </div>
     </C.Container>
   );
