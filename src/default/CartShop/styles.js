@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.a`
+export const Container = styled.div`
   height: 100vh;
   max-width: 428px;
   margin-left: auto;
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
+  transform: translate(428px);
+  transition: 300ms;
 
   background-color: ${(props) => props.theme.colors.cartBG};
   box-shadow: ${(props) =>
@@ -14,6 +17,10 @@ export const Container = styled.a`
 
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+
+  &.open {
+    transform: translate(0);
+  }
 `;
 
 export const Header = styled.header`
@@ -130,7 +137,7 @@ export const Quantify = styled.div`
 `;
 
 export const Footer = styled.div`
-  padding: 24px 32px;
+  padding: 24px 32px 16px 32px;
   border-top: 1px solid ${(props) => props.theme.colors["gray-50"]};
 `;
 
@@ -168,14 +175,17 @@ export const BtnContinueBuy = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+  border-radius: 8px;
 
   font-size: 16px;
   color: ${(props) => props.theme.colors.text};
 
-  margin: 18px auto 0 auto;
+  margin: 10px auto 0 auto;
   display: block;
 
+  padding: 8px;
+
   &:hover {
-    opacity: 0.8;
+    background: #f6f6f6;
   }
 `;
