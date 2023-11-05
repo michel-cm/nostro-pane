@@ -5,6 +5,8 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     a {
@@ -14,7 +16,7 @@ export default createGlobalStyle`
 
     :focus {
         outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme.colors["green-500"]};
+        box-shadow: 0 0 0 2px ${(props) => props.theme.colors["green-300"]};
     }
 
     body {
@@ -40,4 +42,15 @@ export default createGlobalStyle`
         width: 100%;
         margin: 0 auto;
     }
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-stroke-color);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color-background-color);
+}
 `;

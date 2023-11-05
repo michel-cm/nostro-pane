@@ -14,6 +14,9 @@ export default {
     /*HEADER*/
     header: "#FFF",
 
+    /*CART*/
+    cartBG: "#FFF",
+
     "gray-50": "#EAEAEA",
     "gray-100": "#E1E1E6",
     "gray-300": "#C4C4CC",

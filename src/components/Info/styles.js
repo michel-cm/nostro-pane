@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Info = styled.div`
+export const Info = styled.button`
   background: none;
   border: none;
   outline: none;
@@ -21,6 +21,10 @@ export const Info = styled.div`
   img {
     width: 28px;
     height: 28px;
+  }
+
+  img path {
+    fill: red;
   }
 
   div {

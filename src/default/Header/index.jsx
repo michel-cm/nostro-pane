@@ -3,6 +3,7 @@ import * as C from "./styles";
 import { Logo } from "../../components/Logo";
 import { Info } from "../../components/Info";
 import { Cart } from "../../components/Cart";
+import { Wpp } from "../../components/Wpp";
 
 // import { MdEmojiFoodBeverage } from "react-icons/md";
 
@@ -19,6 +20,7 @@ const Header = () => {
           <C.titleLogo>Nostro Pane</C.titleLogo>
         </C.AreaLogo>
         <C.AreaIcons>
+          <Wpp />
           <Info />
           <Cart />
         </C.AreaIcons>

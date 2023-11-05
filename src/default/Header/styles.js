@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  height: 70px;
+  height: 75px;
   background-color: ${(props) => props.theme.colors.header};
   box-shadow: ${(props) =>
     props.theme.title === "dark" ? "none" : "0 0px 20px rgba(0, 0, 0, 0.1)"};
