@@ -18,9 +18,21 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: max-content 1fr max-content;
 
+  padding-right: 4px;
+
   &.open {
     transform: translate(0);
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.colors["gray-300"]};
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: ${(props) => props.theme.colors["gray-100"]}
 `;
 
 export const Header = styled.header`

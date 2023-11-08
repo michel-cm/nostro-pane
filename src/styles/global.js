@@ -54,16 +54,53 @@ export default createGlobalStyle`
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, .8);
+    }   
+
+    .categories {
+        display: flex;
+        gap: 12px;
+        overflow: auto;
+        user-select: none;
+        cursor: grab;
     }
 
-::-webkit-scrollbar{
-  width: 6px;
-}
-::-webkit-scrollbar-thumb{
-  background-color: var(--color-stroke-color);
-  border-radius: 8px;
-}
-::-webkit-scrollbar-track{
-  background-color: var(--color-background-color);
-}
+    ::-webkit-scrollbar{
+        height: 6px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: ${(props) => props.theme.colors["gray-300"]};
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: ${(props) => props.theme.colors["gray-50"]};    
+    }
+
+    .teste  {
+        font-size: 17px;
+        color: ${(props) => props.theme.colors["gray-500"]};
+        font-weight: 500;
+        letter-spacing: .7px;
+        max-width: max-content;
+
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        border-radius: 10px 10px 0 0;
+    }
+    .teste span {
+        white-space: nowrap;
+    }
+    /* .teste:hover  {
+        cursor: pointer;
+        color: #00B37E;
+        background: #f6f6f6;
+        font-weight: 500;
+    } */
+    .category-active  {
+        color: #00B37E;
+        font-weight: 500;
+        background: #f2f2f2;
+    }
 `;

@@ -49,6 +49,26 @@ export const CartShop = () => {
               </C.Price>
             </C.Details>
           </C.Item>
+          <C.Item>
+            <img src={cadeira} alt="" />
+            <C.Details>
+              <C.Title>
+                Novelo de Presunto, Queijo, Mostarda e Catupiry.
+              </C.Title>
+              <C.Price>
+                <span>R$ 8.599,90</span>
+                <C.Quantify>
+                  <button className="sub">
+                    <BsDash />
+                  </button>
+                  <span>1</span>
+                  <button className="add">
+                    <BsPlus />
+                  </button>
+                </C.Quantify>
+              </C.Price>
+            </C.Details>
+          </C.Item>
         </C.Main>
         <C.Footer className="cart__footer">
           <C.Total>
